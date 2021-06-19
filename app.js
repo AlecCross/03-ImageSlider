@@ -59,6 +59,9 @@ function changeSlide(direction){
     const container = document.querySelector('.container')
     //Спойлер на тему создания переменных через const
     const height = container.clientHeight
+    //Слайдер для правой части
     mainSlide.style.transform = `translateY(-${activeSlideIndex * height}px)`
+    //Слайдер для левой части
+    sidebar.style.transform = `translateY(${activeSlideIndex * height}px)`
 }
 
